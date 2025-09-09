@@ -5,6 +5,8 @@ import net.objecthunter.exp4j.ExpressionBuilder;
 
 public class IntegralByTrapazoids
 {
+    //Function nderiv = new Function("nderiv", );
+
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
@@ -35,6 +37,11 @@ public class IntegralByTrapazoids
         for (int i = 0; i < yVals.size() - 1; i++)
         {
             integral += (1.0/2.0) * interval * (yVals.get(i) + yVals.get(i + 1));
+        }
+
+        for (double val : yVals)
+        {
+            System.out.println(val);
         }
 
         System.out.print("Integral: ");
